@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import About from '~/components/About.vue'
-import Projects from '~/components/Projects.vue'
-import Contact from '~/components/Contact.vue'
 </script>
 
 <template>
