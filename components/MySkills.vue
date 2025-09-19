@@ -20,8 +20,8 @@
                         <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm">Tailwind CSS</span>
                         <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Pinia Store</span>
                         <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Nuxt</span>
-                        <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">TypeScript</span>
                         <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">HTML5</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">TypeScript</span>
                         <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">JavaScript</span>
                         <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">React.js</span>
                         <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">CSS</span>
@@ -60,13 +60,14 @@
 
                 <div class="bg-white p-6">
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">VS Code</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">VS Code</span>
                         <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">GitHub</span>
                         <span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm">Figma</span>
-                        <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm">Insomnia</span>
+                        <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Insomnia</span>
                         <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Vercel</span>
+                        <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Volta</span>
+                        <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Vite</span>
                         <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Linux</span>
-                        <span class="px-3 py-1 bg-white text-white rounded-full text-sm">blank blank blank</span>
                     </div>
                 </div>
             </div>
@@ -82,10 +83,12 @@
                             alt="Nuxt.js" class="w-12 h-12 opacity-60 hover:opacity-100 transition-opacity">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuetify/vuetify-original.svg"
                             alt="Vuetify" class="w-12 h-12 opacity-60 hover:opacity-100 transition-opacity">
+                        <img src="/public/icons/tailwind-css-svgrepo-com.png" alt="Tailwind CSS"
+                            class="w-16 h-16 opacity-60 hover:opacity-100 transition-opacity">
+                        <img src="/public/icons/pinia-logo.png" alt="Pinia Store"
+                            class="w-12 h-12 opacity-60 hover:opacity-100 transition-opacity">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
                             alt="TypeScript" class="w-12 h-12 opacity-60 hover:opacity-100 transition-opacity">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
-                            alt="Tailwind CSS" class="w-12 h-12 opacity-60 hover:opacity-100 transition-opacity">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
                             alt="JavaScript" class="w-12 h-12 opacity-60 hover:opacity-100 transition-opacity">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
@@ -98,30 +101,42 @@
                             alt="Insomnia" class="w-12 h-12 opacity-60 hover:opacity-100 transition-opacity">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg"
                             alt="NestJS" class="w-12 h-12 opacity-60 hover:opacity-100 transition-opacity">
+                        <img src="/public/icons/vite-logo.png" alt="Vite"
+                            class="w-12 h-12 opacity-60 hover:opacity-100 transition-opacity">
+                        <img src="/public/icons/volta-logo.jpg" alt="Volta"
+                            class="w-26 h-12 opacity-60 hover:opacity-100 transition-opacity">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
                             alt="Linux" class="w-12 h-12 opacity-60 hover:opacity-100 transition-opacity">
+                        <img src="/public/icons/PostgreSQL_logo.png" alt="PostgreSQL"
+                            class="w-12 h-12 opacity-60 hover:opacity-100 transition-opacity">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
                             alt="React.js" class="w-12 h-12 opacity-60 hover:opacity-100 transition-opacity">
                     </div>
                 </div>
                 <div class="flex items-center justify-center min-w-max">
                     <div class="flex items-center space-x-16 px-8">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
                             alt="Vue.js" class="w-12 h-12 opacity-60 hover:opacity-100 transition-opacity">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg"
                             alt="Nuxt.js" class="w-12 h-12 opacity-60 hover:opacity-100 transition-opacity">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                            alt="HTML5" class="w-12 h-12 opacity-60 hover:opacity-100 transition-opacity">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuetify/vuetify-original.svg"
+                            alt="Vuetify" class="w-12 h-12 opacity-60 hover:opacity-100 transition-opacity">
+                        <img src="/public/icons/tailwind-css-svgrepo-com.png" alt="Tailwind CSS"
+                            class="w-16 h-16 opacity-60 hover:opacity-100 transition-opacity">
+                        <img src="/public/icons/pinia-logo.png" alt="Pinia Store"
                             class="w-12 h-12 opacity-60 hover:opacity-100 transition-opacity">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                            alt="JavaScript" class="w-12 h-12 opacity-60 hover:opacity-100 transition-opacity">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
                             alt="TypeScript" class="w-12 h-12 opacity-60 hover:opacity-100 transition-opacity">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
-                            alt="Tailwind CSS" class="w-12 h-12 opacity-60 hover:opacity-100 transition-opacity">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
-                            alt="Figma" class="w-12 h-12 opacity-60 hover:opacity-100 transition-opacity">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                            alt="JavaScript" class="w-12 h-12 opacity-60 hover:opacity-100 transition-opacity">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                            alt="GitHub" class="w-12 h-12 opacity-60 hover:opacity-100 transition-opacity">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                            alt="Node.js" class="w-12 h-12 opacity-60 hover:opacity-100 transition-opacity">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                            alt="Visual Studio Code" class="w-12 h-12 opacity-60 hover:opacity-100 transition-opacity">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/insomnia/insomnia-original.svg"
+                            alt="Insomnia" class="w-12 h-12 opacity-60 hover:opacity-100 transition-opacity">
                     </div>
                 </div>
             </div>

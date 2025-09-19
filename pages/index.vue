@@ -8,8 +8,8 @@
         <main class="pt-16">
             <MyAbout />
             <MyExperiences />
-            <MyProjects />
             <MySkills />
+            <MyProjects />
         </main>
         <MyFooter />
     </div>
