@@ -16,13 +16,13 @@
         <!-- Introduction -->
         <div class="text-center mb-8">
           <!-- <div ref="typingText" class="min-h-[120px]"> to update logic -->
-            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Hi, I'm Lennon! 🍋</h3>
-            <p class="text-lg text-gray-600 leading-relaxed" id="typing-text">
-              A passionate <span class="text-blue-800 font-medium">Full Stack Developer</span> with experience in
-              building
-              modern web applications.
-              I love creating interactive and user-friendly digital experiences that make a difference.
-            </p>
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Hi, I'm Lennon! 🍋</h3>
+          <p class="text-lg text-gray-600 leading-relaxed" id="typing-text">
+            A passionate <span class="text-blue-800 font-medium">Full Stack Developer</span> with experience in
+            building
+            modern web applications.
+            I love creating interactive and user-friendly digital experiences that make a difference.
+          </p>
           <!-- </div> -->
         </div>
         <!-- Details Grid -->
@@ -149,16 +149,16 @@
         <div class="text-center mt-8 pt-6 border-t border-gray-200">
           <p class="text-gray-600 mb-4">Let's build something amazing together!</p>
           <div class="flex flex-wrap justify-center gap-4">
-            <a href="#contact"
-              class="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200 flex items-center">
+            <button @click="openContactModal"
+              class="px-6 py-2 bg-blue-800 text-white rounded-lg hover:bg-blue-600 transition-colors duration-200 flex items-center">
               <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
               </svg>
               Get In Touch
-            </a>
+            </button>
             <a href="/cv/LennonPaulCabrera.pdf" download="LennonCabrera_CV.pdf"
-              class="px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors duration-200 flex items-center">
+              class="px-6 py-2 bg-green-700 text-white rounded-lg hover:bg-green-600 transition-colors duration-200 flex items-center">
               <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd"
                   d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" />
@@ -166,7 +166,7 @@
               Download CV
             </a>
             <a href="#projects"
-              class="px-6 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors duration-200 flex items-center">
+              class="px-6 py-2 border border-gray-400 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors duration-200 flex items-center">
               <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd"
                   d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" />
@@ -177,48 +177,65 @@
         </div>
       </div>
     </div>
+    <MyContact :isVisible="isContactModalVisible" @close="closeContactModal" />
   </section>
 </template>
 
 <script setup>
-import { onMounted, nextTick } from 'vue'
+import { onMounted, nextTick, ref } from 'vue'
+import MyContact from './MyContact.vue'
 
+// Modal state
+const isContactModalVisible = ref(false)
+
+// Modal methods
+const openContactModal = () => {
+  console.log('Opening contact modal...') // Debug log
+  isContactModalVisible.value = true
+  console.log('isContactModalVisible:', isContactModalVisible.value) // Debug log
+}
+
+const closeContactModal = () => {
+  console.log('Closing contact modal...') // Debug log
+  isContactModalVisible.value = false
+}
+
+// Your existing typing animation code...
 onMounted(async () => {
   await nextTick()
-  
+
   const fullText = "A passionate Frontend Web Developer with experience in building modern web applications. I love creating interactive and user-friendly digital experiences that make a difference."
-  
+
   let charIndex = 0
   const typingElement = document.getElementById('typing-text')
-  
-  console.log('Typing element found:', typingElement) // Debug log
-  
+
+  console.log('Typing element found:', typingElement)
+
   if (!typingElement) {
     console.error('Typing element not found!')
     return
   }
-  
+
   function typeWriter() {
     if (charIndex < fullText.length) {
       let currentText = fullText.substring(0, charIndex + 1)
-      
-      // Add styling to "Frontend Web Developer"
+
       if (currentText.includes('Frontend Web Developer')) {
         currentText = currentText.replace(
           'Frontend Web Developer',
           '<span class="text-blue-800 font-medium">Frontend Web Developer</span>'
         )
       }
-      
+
       typingElement.innerHTML = currentText
       charIndex++
       setTimeout(typeWriter, 50)
     } else {
-      console.log('Typing animation completed!') // Debug log
+      console.log('Typing animation completed!')
     }
   }
-  
-  console.log('Starting typing animation...') // Debug log
+
+  console.log('Starting typing animation...')
   typeWriter()
 })
 </script>
@@ -231,10 +248,14 @@ onMounted(async () => {
 }
 
 @keyframes blink {
-  0%, 50% {
+
+  0%,
+  50% {
     opacity: 1;
   }
-  51%, 100% {
+
+  51%,
+  100% {
     opacity: 0;
   }
 }

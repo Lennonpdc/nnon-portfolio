@@ -1,6 +1,6 @@
 <template>
-  <section id="experience" class="min-h-screen flex flex-col justify-center items-center bg-gray-50 py-16">
-    <h2 class="text-4xl font-bold mb-12 text-gray-800">Work Experiences</h2>
+  <section id="experience" class="min-h-screen flex flex-col justify-center items-center py-16">
+    <h2 class="text-4xl font-bold mb-12 text-gray-200">Work Experiences</h2>
     
     <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
       <!-- Experience Card 1 -->
