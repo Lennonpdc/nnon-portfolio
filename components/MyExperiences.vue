@@ -1,6 +1,6 @@
 <template>
   <section id="experience" class="min-h-screen flex flex-col justify-center items-center py-16">
-    <h2 class="text-4xl font-bold mb-12 text-gray-200">Work Experiences</h2>
+    <h2 class="text-4xl font-bold mb-12 text-gray-600">Work Experiences</h2>
     
     <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
       <!-- Experience Card 1 -->
@@ -9,7 +9,7 @@
         <div class="bg-white p-6 border-b border-gray-200">
           <h3 class="text-xl font-bold text-blue-900">IT Lead - Frontend Development</h3>
           <p class="text-gray-600 text-sm mt-1">Seaversity Inc.</p>
-          <p class="text-gray-500 text-sm">March 2025 - Present</p>
+          <p class="text-gray-500 text-sm">March 2025 - November 2025</p>
         </div>
         
         <!-- Content (Dark blue-gray background, white text) -->
