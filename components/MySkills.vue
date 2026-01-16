@@ -44,7 +44,7 @@
                         <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Php</span>
                         <span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm">Nest.js</span>
                         <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">PostgreSQL</span>
-                        <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">REST API</span>
+                        <span class="px-3 py-1 bg-gray-300 text-gray-800 rounded-full text-sm">REST API</span>
                         <span class="px-3 py-1 bg-white text-white rounded-full text-sm">blank blank blank</span>
                     </div>
                 </div>
@@ -67,7 +67,7 @@
                         <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Vercel</span>
                         <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Volta</span>
                         <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Vite</span>
-                        <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Linux</span>
+                        <span class="px-3 py-1 bg-gray-300 text-gray-800 rounded-full text-sm">Linux</span>
                     </div>
                 </div>
             </div>
