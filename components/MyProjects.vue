@@ -10,7 +10,7 @@
         <div class="bg-white p-6 border-b border-gray-200">
           <h3 class="text-xl font-semibold text-gray-800">Frontend Developer</h3>
           <p class="text-gray-600 text-sm mt-1">Integrated Management System</p>
-          <p class="text-gray-500 text-sm">2023 - Present</p>
+          <p class="text-gray-500 text-sm">2023 - 2025</p>
         </div>
 
         <!-- Content (Dark blue-gray background, white text) -->
